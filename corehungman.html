@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="zone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="motor.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <div class="title">THE HANGMAN</div>
+        <div id="word">_ _ _ _ _</div>
+        <div id="message">Guess a letter</div>
+         <div id="category">Category animal food object </div>
+
+        <div class="letter-buttons">
+            <!-- hna partie dyal js -->
+        </div>
+        <div class="hangman-drawing">
+            <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+            <img id="hangmanImage" src="0.png" alt="Hangman Image">
+        </div>
+        <div class="lives">
+            <span id="lives">Lives: 8</span> 
+            <img  src="100.png" >
+        </div>
+        
+    </div>
+     <audio id="backgroundMusic" src="song.mp3" preload="auto" loop></audio>
+ 
+
+
+
+  <div class="game-buttons">
+    <button id="reloadButton">Reload Game</button>
+    <button onclick="window.location.href='landingpage.html'">Return</button>
+    <button id="startMusicButton">Start Music</button>
+     <audio id="backgroundMusic" src="song.mp3" preload="auto" loop></audio>
+</div>
+
+    
+</body>
+</html>

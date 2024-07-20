@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif; /* Use the same font as the game */
+    background-color: black;
+    text-align: center;
+}
+
+.landing-page, .credits-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   z-index: 2;
+   }
+
+button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+button:nth-child(1) {
+    background-color: #28a745; /* Green for Play */
+}
+
+button:nth-child(2) {
+    background-color: #17a2b8; /* Teal for Credits */
+}
+
+button:nth-child(3) {
+    background-color: #dc3545; /* Red for Quit */
+}
+p{   line-height: 1.5;
+    color: white;
+ }
+ img {
+    width: 50%;
+    left: 50%;
+    height: 50%;
+    top: 50%;
+    z-index: 1;
+ }
